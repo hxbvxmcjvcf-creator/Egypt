@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  ios/Runner/Info.plist
+  Bundle ID  : com.example.eduAuth31
+  Firebase   : maxstall project (GoogleService-Info.plist in same folder)
+-->
+<plist version="1.0">
+<dict>
+
+  <!-- ── App Identity ─────────────────────────────────────────────────── -->
+  <key>CFBundleDevelopmentRegion</key>
+  <string>$(DEVELOPMENT_LANGUAGE)</string>
+
+  <key>CFBundleDisplayName</key>
+  <string>EduPlatform</string>
+
+  <key>CFBundleExecutable</key>
+  <string>$(EXECUTABLE_NAME)</string>
+
+  <key>CFBundleIdentifier</key>
+  <string>com.example.eduAuth31</string>
+
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+
+  <key>CFBundleName</key>
+  <string>edu_auth</string>
+
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+
+  <key>CFBundleShortVersionString</key>
+  <string>$(FLUTTER_BUILD_NAME)</string>
+
+  <key>CFBundleSignature</key>
+  <string>????</string>
+
+  <key>CFBundleVersion</key>
+  <string>$(FLUTTER_BUILD_NUMBER)</string>
+
+  <!-- ── Firebase URL Scheme ───────────────────────────────────────────── -->
+  <!-- Required for Google Sign-In / Firebase Auth redirect -->
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleTypeRole</key>
+      <string>Editor</string>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <!-- REVERSED_CLIENT_ID from GoogleService-Info.plist -->
+        <string>com.googleusercontent.apps.1057922283011-5tde5a2343kqvm18481tmbc5m5qvi2fq</string>
+      </array>
+    </dict>
+  </array>
+
+  <!-- ── UI Modes ──────────────────────────────────────────────────────── -->
+  <key>UILaunchStoryboardName</key>
+  <string>LaunchScreen</string>
+
+  <key>UIMainStoryboardFile</key>
+  <string>Main</string>
+
+  <key>UISupportedInterfaceOrientations</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+  </array>
+
+  <key>UISupportedInterfaceOrientations~ipad</key>
+  <array>
+    <string>UIInterfaceOrientationPortrait</string>
+    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    <string>UIInterfaceOrientationLandscapeLeft</string>
+    <string>UIInterfaceOrientationLandscapeRight</string>
+  </array>
+
+  <key>UIViewControllerBasedStatusBarAppearance</key>
+  <false/>
+
+  <!-- ── Privacy — Required by Apple since iOS 17 ──────────────────────── -->
+  <!-- Camera: not used now but added to prevent crashes if enabled later -->
+  <key>NSCameraUsageDescription</key>
+  <string>نستخدم الكاميرا لتحميل صورة الملف الشخصي.</string>
+
+  <!-- Photo library -->
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>نستخدم معرض الصور لاختيار صورة الملف الشخصي.</string>
+
+  <!-- Network — arbitrary loads (needed for Firebase & Google Fonts) -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+
+  <!-- ── Flutter ───────────────────────────────────────────────────────── -->
+  <key>CADisableMinimumFrameDurationOnPhone</key>
+  <true/>
+
+  <key>UIApplicationSupportsIndirectInputEvents</key>
+  <true/>
+
+</dict>
+</plist>
